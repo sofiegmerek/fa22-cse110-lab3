@@ -3,7 +3,7 @@
   <head>
     <title>Meeting Minutes</title>
     <meta charset="utf-8">
-    <link rel="favicon-16x16.png" sizes="16x16"> 
+    <link rel="favicon-16x16.png" href="" resource=""> 
   </head>
   
   <body>
@@ -63,6 +63,8 @@
     <audio controls>
         Here is the audio
         <source src="audio.mp3" type="audio/mp3">
+        <source src="audio.m4a" type="audio/m4a">
+
     </audio>
 
 
@@ -80,17 +82,17 @@
         <fieldset>
             <legend>Favorite christmas movie</legend>
             <label for="mov1">The Santa Clause</label>
-            <input type="checkbox" name="mov1"> <br>
+            <input type="checkbox" id="mov1"> <br>
             <label for="mov2">The Santa Clause 2</label>
-            <input type="radio"  name="mov2"> <br>
+            <input type="radio"  id="mov2"> <br>
             <label for="other">Other</label>
-            <input type="text"  name="other" ><br><br>
+            <input type="text"  id="other" ><br><br>
             <label for="lastseen">When did you last see the Santa Clause</label>
-            <input type="date" name="lastseen"> <br>
+            <input type="date" id="lastseen"> <br>
             <label for="why">Explain why The Santa Clause is the best christmas movie</label>
-            <textarea name="why" rows="12" cols="25"></textarea> <br>
+            <textarea id="why" rows="12" cols="25"></textarea> <br>
             <label for="holiday">Select the best holiday</label>
-            <select name="holiday">
+            <select id="holiday">
                 <option value="christmas">Christmas</option>
                 <option value="thanksgiving">Thanksgiving</option>
                 <option value="Christmas Eve">Christmas</option>
