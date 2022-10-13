@@ -1,0 +1,186 @@
+/*style for the whole page*/
+
+/*3 color representations*/
+body{
+background-color:  white;
+color: #000;
+margin-left: 2vw;
+
+
+}
+
+p{
+    /*text style*/
+    color: rgb(0, 21, 20);
+    text-decoration: dashed;
+    text-align: start;
+}
+
+h1{
+    border-color: hsl(18, 83%, 63%);
+    border-color: orange;
+    border-width: 10px;
+    border-radius: 5px;
+    border-style: groove;
+    background-color: bisque;
+    color:black;
+
+    /* 3 absolute units*/ 
+    border-top-left-radius: 1cm;
+    margin-top: 70px;
+    margin-bottom: 10mm;
+
+    /*3 relative units*/
+    line-height: 3ex;
+    font-size: 2em; 
+    margin-left: 2vw;
+
+    margin-right: 30vw;
+    text-align: center;
+
+}
+
+h1:active{
+    background-color: chocolate;
+    color: white;
+}
+
+/*box model long versions */
+.navbar{
+   margin-top: 5px;
+   margin-bottom: 10px; 
+   margin-left: 10px; 
+   margin-right: 10px; 
+
+   padding-top: 5px;
+   padding-bottom: 30px;
+   padding-left: 10px;
+   padding-right: 20px;
+
+   border-style: dotted;
+   border-color: orange;
+   border-width: 10px;
+   border-radius: 50px;
+
+   
+    display: block;
+
+    height: 80px;
+    width: 100vw;
+    position: static;
+
+}
+
+/*box model short versions */
+#mov1{
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+img{
+    margin: auto;
+    max-width: fit-content;
+    min-width: none;
+    position: relative;
+}
+
+:hover{
+    background-color: white;
+}
+
+:active{
+    background-color: black;
+    color: white
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.grid{
+    display: grid;
+    column-gap: 30px;
+    row-gap: 20px;
+    justify-items: start;
+
+}
+
+@media (max-width: 1200px) {
+    /* … */
+  }
+
+  @font-face {
+    font-family: "Robotot";
+    src: url("Roboto/Roboto-Light.ttf");
+  }
+
+  /*selectors*/
+
+ /*class*/
+  .grid{
+      background-color: grey;
+  }
+
+  /*id*/
+  #other{
+      font-size: larger;
+  }
+  
+  /*universal*/
+  *{
+    background-blend-mode: color;
+    margin-left: 2vw;
+  }
+
+  a{
+      border: 3px green solid;
+  }
+/*element*/
+  a[title]
+  {
+    font-size: large;
+  }
+/*attribute*/
+  a[href="https://www.learnpython.org/"]
+  {
+    font-size: large;
+  }
+/*pseudo class*/
+  p:hover{
+      background-color: blue;
+  }
+/*selector*/
+  h2, h3{
+      font-size: larger;
+  }
+/*combinators*/
+
+/*Descendant Combinator (element element)*/
+li ul {
+    border-width: 4px;
+}
+/*Child Combinator (element > element) */
+section > details{
+    background-color: #fff;
+}
+/*General sibling combinator (element ~ element) */
+a~p{
+    background-size: auto;
+}
+/*Adjacent sibling combinator (element + element) */
+h1+h3{
+    font-size: medium;
+}
+
+/*Combining Two Selectors (element.class)*/
+div.grid{
+    margin: auto;
+}
+
+
+
